@@ -11,10 +11,10 @@ function updateMetrics() {
     const nginx = document.getElementById("nginx");
 
     if (Math.random() > 0.1) {
-        nginx.innerText = "🟢 Running";
+        nginx.innerText = " Running";
         nginx.style.color = "green";
     } else {
-        nginx.innerText = "🔴 Stopped";
+        nginx.innerText = " Stopped";
         nginx.style.color = "red";
     }
 }
