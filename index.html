@@ -1,20 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Server Monitoring Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Server Monitoring Dashboard</h1>
 
-    <div class="card">
-        <h2>CPU Usage</h2>
-        <p id="cpu">Loading...</p>
+    <header>
+        <h1>🚀 Server Monitoring Dashboard</h1>
+        <p>Real-Time Infrastructure Overview</p>
+    </header>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h2>CPU Usage</h2>
+            <div class="metric" id="cpu">0%</div>
+        </div>
+
+        <div class="card">
+            <h2>Memory Usage</h2>
+            <div class="metric" id="memory">0%</div>
+        </div>
+
+        <div class="card">
+            <h2>Disk Utilization</h2>
+            <div class="metric" id="disk">0%</div>
+        </div>
+
+        <div class="card">
+            <h2>Nginx Status</h2>
+            <div class="metric" id="nginx">Running</div>
+        </div>
+
     </div>
-
-    <div class="card">
+          <div class="card">
         <h2>Memory Usage</h2>
         <p id="memory">Loading...</p>
     </div>
